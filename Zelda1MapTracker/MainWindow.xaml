@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zelda1MapTracker"
         mc:Ignorable="d"
-        Title="MainWindow" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+        Title="Z1 Map Tracker" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
     <Canvas Name="overworldCanvas">
         <UniformGrid Name="rectangleGrid" Rows="8" Columns="16"></UniformGrid>
     </Canvas>
