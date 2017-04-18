@@ -141,20 +141,6 @@ namespace Zelda1MapTracker {
             overworldCanvas.Children.Remove(dungeonGrid);
         }
 
-        private void removeDungeonIconsFromTile(Rectangle rect) {
-
-            //get coordinates of tile
-            Point p = rect.TranslatePoint(new Point(0, 0), rectangleGrid);
-            double x = p.X;
-            double y = p.Y;
-            int xInt = (int)x;
-            int yInt = (int)y;
-
-            //find grid in overworld's children and remove it
-            UniformGrid dungeonGrid = overworldCanvas.FindName($"dungeonGrid{xInt}{yInt}") as UniformGrid;
-            overworldCanvas.Children.Remove(dungeonGrid);
-        }
-
         private Canvas createDungeonIconCanvas(String filePath) {
             Canvas canvas = new Canvas();
 
